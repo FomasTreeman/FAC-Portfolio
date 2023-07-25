@@ -16,8 +16,8 @@ export default function Home() {
   ];
 
   return (
-    <Tabs>
-      <TabList>
+    <Tabs variant="soft-rounded" colorScheme="green" isFitted>
+      <TabList className="border-b-2 border-x-2 rounded-3xl">
         {projects.map((name) => (
           <Tab key={crypto.randomUUID()}>{name}</Tab>
         ))}
