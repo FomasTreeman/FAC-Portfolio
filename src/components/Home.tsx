@@ -14,11 +14,11 @@ export default function Home() {
       url: 'https://main--enchanting-churros-a4027f.netlify.app/',
     },
     { name: 'mood-map', url: 'https://mood-map.vercel.app/' },
-    { name: 'sobSessions' },
-    { name: 'Zaroff-S' },
-    { name: 'FAC-Tales' },
-    { name: 't33n-ang5t' },
-    { name: 'fess-booth' },
+    { name: 'sobSessions', url: '' },
+    { name: 'Zaroff-S', url: '' },
+    { name: 'FAC-Tales', url: '' },
+    { name: 't33n-ang5t', url: '' },
+    { name: 'fess-booth', url: '' },
   ];
 
   const projects = PROJECTS.map((project) => project.name);
@@ -32,9 +32,9 @@ export default function Home() {
       </TabList>
 
       <TabPanels>
-        {projects.map((name) => (
+        {PROJECTS.map((project) => (
           <TabPanel key={crypto.randomUUID()}>
-            <h1>{name}</h1>
+            <Project project={project} />
           </TabPanel>
         ))}
       </TabPanels>
