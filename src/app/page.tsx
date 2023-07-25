@@ -19,7 +19,7 @@ export default function page() {
           Thomas Freeman
         </Text>
       </header>
-      <Home />;
+      <Home />
     </>
   );
 }

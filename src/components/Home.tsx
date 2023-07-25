@@ -4,16 +4,24 @@ import { Tabs, Tab, TabList, TabPanels, TabPanel } from '@chakra-ui/react';
 import Project from './Project';
 
 export default function Home() {
-  const projects = [
-    'rent-shield',
-    'a-maze',
-    'mood-map',
-    'sob-sessions',
-    'Zaroff-S',
-    'FAC-Tales',
-    't33n-ang5t',
-    'fess-booth',
+  const PROJECTS = [
+    {
+      name: 'rent-shield',
+      url: 'https://rent-shield.vercel.app/',
+    },
+    {
+      name: 'a-maze',
+      url: 'https://main--enchanting-churros-a4027f.netlify.app/',
+    },
+    { name: 'mood-map', url: 'https://mood-map.vercel.app/' },
+    { name: 'sobSessions' },
+    { name: 'Zaroff-S' },
+    { name: 'FAC-Tales' },
+    { name: 't33n-ang5t' },
+    { name: 'fess-booth' },
   ];
+
+  const projects = PROJECTS.map((project) => project.name);
 
   return (
     <Tabs variant="soft-rounded" colorScheme="green" isFitted>
