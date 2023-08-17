@@ -8,13 +8,15 @@ export default function page() {
   return (
     <>
       <header className="flex justify-between items-center">
-        <Image
-          src="fac.svg"
-          alt="fac"
-          width={100}
-          height={100}
-          className="invert m-6"
-        />
+        <a href='https://www.foundersandcoders.com/'>
+          <Image
+            src="fac.svg"
+            alt="fac"
+            width={100}
+            height={100}
+            className="invert m-6"
+          />
+        </a>
         <Text fontSize="xl" className="m-6">
           Thomas Freeman
         </Text>
