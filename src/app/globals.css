@@ -238,6 +238,13 @@ html {
   background-color: rgb(51, 51, 51);
 }
 
+@media (max-width: 900px) {
+  .markdown {
+    margin: 1rem 0px;
+    padding: 1.5rem;
+  }
+}
+
 .markdown h1,
 .markdown h2,
 .markdown h3,

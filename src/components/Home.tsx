@@ -7,10 +7,10 @@ import PROJECTS from '@/../public/projects'
 
 export default function Home() {
   return (
-    <Tabs variant="soft-rounded" colorScheme="green" isFitted isLazy>
-      <TabList id='tab-list' className="border-b-2 border-x-2 rounded-full">
+    <Tabs variant="soft-rounded" colorScheme="green" isFitted isLazy >
+      <TabList id='tab-list' className="border-b-2 border-x-2 rounded-full overflow-x-scroll">
         {PROJECTS.map(({ name }) => (
-          <Tab key={crypto.randomUUID()}>{name}</Tab>
+          <Tab key={crypto.randomUUID()} className='whitespace-nowrap'>{name}</Tab>
         ))}
       </TabList>
 

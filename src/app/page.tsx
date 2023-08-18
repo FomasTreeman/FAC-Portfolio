@@ -18,7 +18,7 @@ export default function page() {
           />
         </a>
         <Text fontSize="xl" className="m-6">
-          Thomas Freeman
+          Tom Freeman
         </Text>
       </header>
       <Home />

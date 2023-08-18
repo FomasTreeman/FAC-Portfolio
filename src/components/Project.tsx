@@ -13,7 +13,7 @@ export default function Project({
 }) {
   return (
     <div>
-      <aside className='flex gap-4 w-full items-center justify-end'>
+      <aside className='flex gap-4 w-full items-center justify-end h-20'>
         {url ? (
           <Link
             href={url}
